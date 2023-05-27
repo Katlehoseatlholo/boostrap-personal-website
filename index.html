@@ -86,7 +86,7 @@
     </header>
     <section class="hero">
         <div class="d-flex min-vh-100" lc-helper="background"
-            style="background:url(grad.jpg)  center / contain no-repeat; background-color:#444; background-blend-mode: overlay;">
+            style="background:url({{datafile.user.photo}})  center / contain no-repeat; background-color:#444; background-blend-mode: overlay;">
             <div class="align-self-center text-center text-light col-md-8 offset-md-2">
                 <div class="lc-block mb-4">
                     <div editable="rich">
@@ -418,9 +418,9 @@
                         </svg>
 
                     </div>
-                    <span class="fw-bold display-5 mb-5" data-vanilla-counter="" data-start-at="0" data-end-at="5"
+                    <span class="fw-bold display-5 mb-5" data-vanilla-counter="" data-start-at="0" data-end-at="15"
                         data-time="1000" data-delay="0" data-format="{}"> </span>
-                    <p class="lead" editable="inline"><b>Ofiices</b> In Gauteng</p>
+                    <p class="lead" editable="inline"><b>Offices</b> In Gauteng</p>
                 </div>
             </div>
         </div>
@@ -576,7 +576,7 @@
             <div class="row">
                 {{#each datafile.foreignLanguage.phrases}}
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card" style="background-color: rgb(247, 108, 108);">
                         <div class="card-body">
                             <h5 class="card-title">{{../foreignLanguage.language}}</h5>
                             <p class="card-text">
